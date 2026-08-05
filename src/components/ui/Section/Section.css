@@ -1,0 +1,36 @@
+.ui-section {
+  position: relative;
+  width: 100%;
+}
+
+.ui-section--padding-none {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.ui-section--padding-sm {
+  padding-top: var(--section-py-sm);
+  padding-bottom: var(--section-py-sm);
+}
+
+.ui-section--padding-md {
+  padding-top: var(--section-py-md);
+  padding-bottom: var(--section-py-md);
+}
+
+.ui-section--padding-lg {
+  padding-top: var(--section-py-lg);
+  padding-bottom: var(--section-py-lg);
+}
+
+.ui-section--bg-primary {
+  background-color: var(--bg-primary);
+}
+
+.ui-section--bg-secondary {
+  background-color: var(--bg-secondary);
+}
+
+.ui-section--bg-surface {
+  background-color: var(--bg-surface);
+}

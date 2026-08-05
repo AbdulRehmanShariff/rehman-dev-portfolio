@@ -1,0 +1,144 @@
+.recruiter-section {
+  position: relative;
+  border-top: 1px solid var(--border-color);
+}
+
+.recruiter__header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto var(--space-12);
+}
+
+.recruiter__subtitle {
+  font-size: var(--font-lg);
+  color: var(--text-secondary);
+  margin-top: var(--space-3);
+  line-height: var(--leading-relaxed);
+}
+
+/* 4 Value Pillar Cards Grid */
+.recruiter__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  margin-bottom: var(--space-12);
+}
+
+@media (min-width: 640px) {
+  .recruiter__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .recruiter__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.recruiter__card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-2xl);
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  box-shadow: var(--shadow-md);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recruiter__card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-primary);
+  box-shadow: 0 12px 24px rgba(99, 102, 241, 0.15);
+}
+
+.recruiter__card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-xl);
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.recruiter__card:hover .recruiter__card-icon {
+  transform: scale(1.1) rotate(4deg);
+  color: var(--color-secondary);
+}
+
+.recruiter__card-title {
+  font-family: var(--font-heading);
+  font-size: var(--font-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+}
+
+.recruiter__card-desc {
+  font-size: var(--font-sm);
+  color: var(--text-secondary);
+  line-height: var(--leading-relaxed);
+}
+
+.recruiter__card-bullets {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}
+
+.recruiter__bullet-item {
+  font-size: var(--font-xs);
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+/* Recruiter Action Banner */
+.recruiter__banner {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-2xl);
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  box-shadow: var(--shadow-lg);
+}
+
+@media (min-width: 768px) {
+  .recruiter__banner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.recruiter__banner-text {
+  max-width: 600px;
+}
+
+.recruiter__banner-title {
+  font-family: var(--font-heading);
+  font-size: var(--font-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.recruiter__banner-desc {
+  font-size: var(--font-sm);
+  color: var(--text-secondary);
+  line-height: var(--leading-relaxed);
+}
+
+.recruiter__banner-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}

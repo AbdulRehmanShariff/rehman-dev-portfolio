@@ -1,0 +1,57 @@
+.ui-heading {
+  margin: 0;
+  font-family: var(--font-heading);
+  color: var(--text-primary);
+  line-height: var(--leading-tight);
+}
+
+.ui-heading--level-1 {
+  font-size: var(--font-4xl);
+  font-weight: var(--font-weight-extrabold);
+  letter-spacing: var(--tracking-tight);
+}
+
+@media (min-width: 768px) {
+  .ui-heading--level-1 {
+    font-size: var(--font-6xl);
+  }
+}
+
+.ui-heading--level-2 {
+  font-size: var(--font-3xl);
+  font-weight: var(--font-weight-bold);
+}
+
+@media (min-width: 768px) {
+  .ui-heading--level-2 {
+    font-size: var(--font-4xl);
+  }
+}
+
+.ui-heading--level-3 {
+  font-size: var(--font-2xl);
+  font-weight: var(--font-weight-semibold);
+}
+
+.ui-heading--level-4 {
+  font-size: var(--font-xl);
+  font-weight: var(--font-weight-semibold);
+}
+
+.ui-heading--level-5 {
+  font-size: var(--font-lg);
+  font-weight: var(--font-weight-medium);
+}
+
+.ui-heading--level-6 {
+  font-size: var(--font-base);
+  font-weight: var(--font-weight-medium);
+}
+
+/* Gradient Text Effect Option */
+.ui-heading--gradient {
+  background: linear-gradient(135deg, var(--text-primary) 30%, var(--color-primary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

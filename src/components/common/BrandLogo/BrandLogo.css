@@ -1,0 +1,15 @@
+.brand-logo {
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-bold);
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.brand-logo__name {
+  color: var(--text-primary);
+}
+
+.brand-logo__accent {
+  color: var(--color-primary);
+}

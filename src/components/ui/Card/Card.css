@@ -1,0 +1,40 @@
+.ui-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.ui-card--hoverable:hover {
+  border-color: var(--border-color-hover);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.ui-card--glass {
+  background: var(--bg-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.ui-card--glow:hover {
+  box-shadow: var(--shadow-glow);
+  border-color: var(--color-primary);
+}
+
+.ui-card__header {
+  margin-bottom: var(--space-4);
+}
+
+.ui-card__body {
+  flex: 1;
+}
+
+.ui-card__footer {
+  margin-top: var(--space-6);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--border-color);
+}
