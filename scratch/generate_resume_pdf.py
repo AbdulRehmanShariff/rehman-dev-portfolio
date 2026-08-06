@@ -199,12 +199,11 @@ def build_pdf():
     story.append(Paragraph("&bull; Artificial Intelligence Internship Certification &ndash; LearnX (Powered by Wipro)", bullet_style))
 
     doc.build(story)
-    print(f"Generated vector PDF successfully at: {target_pdf}")
+    print(f"Reverted PDF generated successfully at: {target_pdf}")
 
-    # Also copy to /public/resume.pdf for fallback links
     import shutil
     shutil.copy(target_pdf, fallback_pdf)
-    print(f"Copied fallback PDF to: {fallback_pdf}")
+    print(f"Copied reverted PDF to fallback: {fallback_pdf}")
 
 if __name__ == '__main__':
     build_pdf()
